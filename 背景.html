@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>背景样式</title>
+	<style type="text/css">
+		body{
+			background-image: url("img/5.jpg");
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		.center{
+			margin: 50px auto;
+			width: 400px;
+		}
+		.content{
+			background-color: rgba(255,255,255,.5);
+			border:1px lightpink dashed;
+			border-radius: 50px;
+			width: 400px;
+			height: 100px;
+			text-align: center;
+			font-size: 12px;
+			margin-bottom: 25px;
+			text-shadow: 1px 1px 1px gray;
+		}
+		textarea{
+			border:1px lightblue solid;
+			background-color: rgba(255,255,255,.8);
+			width: 400px;
+			height: 100px;
+		}
+		button{
+			border-color: lightblue;
+			border-radius: 10px;
+			background-color: rgba(255,255,255,.1);
+			border-style: outset;
+			margin-top: 5px;
+			margin-left: 350px;
+			transition-timing-function: ease-in-out;
+		}
+		button:hover{
+			color: blue;
+			border-style: inset;
+			background-color: rgba(255,255,255,.3);
+		}
+		button:active{
+			color: black;
+			border-style: outset;
+			background-color: rgba(255,255,255,.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<div class="content">
+			<strong>输入格式</strong>如下：<br>
+			导师：张三<br>
+			2016级博士生：天一、王二、吴五<br>
+			2015级硕士生：李四、王五、许六<br>
+			2016级硕士生：刘一、李二、李三<br>
+			2017级本科生：刘六、琪七、司四</div>
+		<textarea id="msg"></textarea><br>
+		<button type="submit" onclick="getmsg()">确认</button>
+	</div>
+</body>
+</html>
